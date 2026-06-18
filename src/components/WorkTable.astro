@@ -1,0 +1,34 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { withBase } from '../lib/url';
+
+interface Props {
+  works: CollectionEntry<'works'>[];
+  compact?: boolean;
+}
+
+const { works, compact = false } = Astro.props;
+---
+
+<div class:list={['work-table', compact && 'work-table--compact']} data-work-table>
+  <div class="work-table__head">
+    <span>ID</span>
+    <span>Title</span>
+    <span>Focus</span>
+    <span>Year</span>
+  </div>
+  <div class="work-table__rows">
+    {works.map((work, index) => (
+      <a
+        class="work-row"
+        href={withBase(`/work/${work.id}`)}
+        data-preview={withBase(work.data.preview || work.data.cover)}
+      >
+        <span class="work-row__id">ISB_{String(index + 104).padStart(3, '0')}</span>
+        <span class="work-row__title">{work.data.title}</span>
+        <span class="work-row__focus">{work.data.focus.join(' · ')}</span>
+        <span class="work-row__year">{work.data.year}</span>
+      </a>
+    ))}
+  </div>
+</div>

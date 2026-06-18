@@ -1,0 +1,162 @@
+media:
+  input: public/uploads
+  output: /uploads
+  rename: safe
+  categories: [image]
+
+content:
+  - name: site
+    label: Site settings
+    type: file
+    path: src/data/site.json
+    format: json
+    fields:
+      - name: name
+        label: Name
+        type: string
+        required: true
+      - name: role
+        label: Role
+        type: string
+        required: true
+      - name: location
+        label: Location
+        type: string
+      - name: timezone
+        label: Timezone
+        type: string
+      - name: availability
+        label: Availability
+        type: string
+      - name: email
+        label: Email
+        type: string
+      - name: bio
+        label: Biography paragraphs
+        type: text
+        list: true
+      - name: capabilities
+        label: Capabilities
+        type: string
+        list: true
+      - name: socials
+        label: Social links
+        type: object
+        list: true
+        fields:
+          - name: label
+            type: string
+          - name: url
+            type: string
+      - name: seo
+        label: SEO
+        type: object
+        fields:
+          - name: title
+            type: string
+          - name: description
+            type: text
+
+  - name: works
+    label: Works
+    type: collection
+    path: src/content/works
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      primary: title
+      fields: [year, status, featured]
+      sort: order
+      order: asc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: year
+        label: Year
+        type: number
+        required: true
+      - name: focus
+        label: Focus
+        type: string
+        list: true
+      - name: role
+        label: Role
+        type: string
+      - name: client
+        label: Client
+        type: string
+      - name: status
+        label: Status
+        type: string
+      - name: cover
+        label: Cover image
+        type: image
+      - name: preview
+        label: Hover preview image
+        type: image
+      - name: gallery
+        label: Gallery
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Image
+            type: image
+          - name: caption
+            label: Caption
+            type: text
+      - name: externalUrl
+        label: External URL
+        type: string
+      - name: featured
+        label: Featured on homepage
+        type: boolean
+      - name: order
+        label: Sort order
+        type: number
+      - name: body
+        label: Body
+        type: rich-text
+
+  - name: blog
+    label: Blog
+    type: collection
+    path: src/content/blog
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      primary: title
+      fields: [date, language, draft]
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+      - name: summary
+        label: Summary
+        type: text
+      - name: language
+        label: Language
+        type: select
+        options:
+          values: [EN, CN]
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: cover
+        label: Cover image
+        type: image
+      - name: draft
+        label: Draft
+        type: boolean
+      - name: body
+        label: Body
+        type: rich-text

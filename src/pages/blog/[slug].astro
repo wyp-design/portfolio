@@ -1,0 +1,29 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { formatDate, withBase } from '../../lib/url';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BaseLayout title={post.data.title} description={post.data.summary} active="blog">
+  <article class="article-page page-shell reveal">
+    <a class="back-link" href={withBase('/blog')}>Blog</a>
+    <header class="article-header">
+      <div>
+        <span>{formatDate(post.data.date)} · {post.data.language}</span>
+        <h1>{post.data.title}</h1>
+      </div>
+      <p>{post.data.summary}</p>
+    </header>
+    <div class="article-body">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>

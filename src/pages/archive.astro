@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WorkTable from '../components/WorkTable.astro';
+import { withBase } from '../lib/url';
+
+const works = (await getCollection('works')).sort((a, b) => b.data.year - a.data.year || a.data.order - b.data.order);
+const first = works[0];
+---
+
+<BaseLayout title="Archive" active="archive">
+  <section class="archive-page page-shell">
+    <div class="page-intro reveal">
+      <p>A curated collection of collaborations, experiments, and living records. List mode is built for scanning; overview mode is built for image-led browsing.</p>
+      <h1>Archive</h1>
+    </div>
+
+    <div class="archive-page__body reveal">
+      <div class="archive-page__preview" data-floating-preview>
+        <img src={withBase(first.data.preview || first.data.cover)} alt={`${first.data.title} preview`} data-preview-image />
+      </div>
+      <div class="archive-page__list" data-view-panel="list">
+        <WorkTable works={works} />
+      </div>
+      <div class="overview-grid" data-view-panel="overview" hidden>
+        {works.map((work) => (
+          <a class="overview-tile" href={withBase(`/work/${work.id}`)}>
+            <img src={withBase(work.data.cover)} alt={work.data.title} loading="lazy" />
+            <span>{work.data.title}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <nav class="view-switcher" aria-label="Archive view">
+      <button class="is-active" type="button" data-view-button="list">List</button>
+      <button type="button" data-view-button="overview">Overview</button>
+    </nav>
+  </section>
+</BaseLayout>

@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import WorkTable from '../components/WorkTable.astro';
+import site from '../data/site.json';
+import { withBase } from '../lib/url';
+
+const works = (await getCollection('works'))
+  .sort((a, b) => a.data.order - b.data.order);
+const featured = works.filter((work) => work.data.featured);
+const first = featured[0] ?? works[0];
+---
+
+<BaseLayout active="works">
+  <section class="home-stage">
+    <div class="home-stage__identity reveal">
+      <h1>{site.name}</h1>
+      <p>{site.role}</p>
+    </div>
+
+    <div class="home-stage__issue reveal">
+      <span>Issue N°001 / Coll. 2026</span>
+      <span>Ref. ARCHIVE-PORTFOLIO</span>
+    </div>
+
+    <div class="home-stage__mark reveal" aria-hidden="true">
+      <span>YP</span>
+    </div>
+
+    <div class="home-stage__preview reveal" data-home-preview>
+      <img
+        src={withBase(first.data.preview || first.data.cover)}
+        alt={`${first.data.title} preview`}
+        data-preview-image
+      />
+    </div>
+
+    <div class="home-stage__works reveal">
+      <WorkTable works={featured} compact />
+    </div>
+
+    <div class="home-stage__footer">
+      <span>{site.location}</span>
+      <span>Creative archive for selected works and notes</span>
+      <span>Scroll 000%</span>
+    </div>
+  </section>
+</BaseLayout>
