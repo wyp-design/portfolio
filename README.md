@@ -1,4 +1,4 @@
-# Creative Portfolio
+# Portfolio
 
 A dark editorial portfolio built with Astro, Markdown content collections, Pages CMS, and GitHub Pages.
 
@@ -25,7 +25,13 @@ This project is configured for a repository page:
 https://<username>.github.io/<repo-name>/
 ```
 
-Set these repository variables if your repository is not named `creative-portfolio`:
+Default production URL:
+
+```txt
+https://wyp-design.github.io/portfolio/
+```
+
+Set these repository variables only if you rename the repository or use a custom domain later:
 
 - `PUBLIC_REPO_NAME`
 - `PUBLIC_SITE_URL`
