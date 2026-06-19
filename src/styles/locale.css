@@ -60,6 +60,63 @@
   text-transform: uppercase;
 }
 
+.contact-list,
+.timeline-list {
+  display: grid;
+  gap: 0.72rem;
+}
+
+.timeline-list {
+  gap: 1.45rem;
+}
+
+.timeline-list--compact {
+  gap: 0.85rem;
+}
+
+.timeline-item {
+  display: grid;
+  gap: 0.7rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.timeline-item:last-child {
+  border-bottom: 0;
+}
+
+.timeline-item h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.22;
+}
+
+.timeline-item p {
+  margin: 0.28rem 0 0;
+}
+
+.timeline-item ul {
+  gap: 0.45rem;
+  padding-left: 0;
+}
+
+.timeline-item li {
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+.timeline-item li::before {
+  content: "";
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 0.28rem;
+  height: 0.28rem;
+  background: var(--accent);
+}
+
 @media (max-width: 720px) {
   .site-nav {
     max-width: min(100%, 23rem);

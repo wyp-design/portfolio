@@ -31,6 +31,9 @@ content:
       - name: email
         label: Email
         type: string
+      - name: phone
+        label: Phone
+        type: string
       - name: bio
         label: Biography paragraphs
         type: text
@@ -39,6 +42,41 @@ content:
         label: Capabilities
         type: string
         list: true
+      - name: education
+        label: Education
+        type: object
+        list: true
+        fields:
+          - name: school
+            label: School
+            type: string
+          - name: program
+            label: Program
+            type: string
+          - name: detail
+            label: Detail
+            type: string
+      - name: experience
+        label: Experience
+        type: object
+        list: true
+        fields:
+          - name: company
+            label: Company
+            type: string
+          - name: role
+            label: Role
+            type: string
+          - name: period
+            label: Period
+            type: string
+          - name: url
+            label: URL
+            type: string
+          - name: summary
+            label: Summary bullets
+            type: text
+            list: true
       - name: socials
         label: Social links
         type: object

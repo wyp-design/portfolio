@@ -1,37 +1,108 @@
 {
-  "name": "你的名字",
-  "role": "创意作品集 / Creative Portfolio",
-  "location": "中国上海 / Shanghai, China",
+  "name": "王亚鹏",
+  "role": "资深 UI/UX 设计师 / Senior UI/UX Designer",
+  "location": "中国深圳 / Shenzhen, China",
   "timezone": "UTC+8",
-  "availability": "接受精选合作 / Available for selected collaborations",
-  "email": "hello@example.com",
+  "availability": "开放 UI/UX 与产品设计合作 / Available for UI/UX collaborations",
+  "email": "wyp271533@163.com",
+  "phone": "186-6596-0765",
   "bio": [
-    "这是一个围绕身份系统、数字体验、图像叙事与清晰编辑结构展开的个人创意作品集。",
-    "网站会作为一个长期更新的创作档案存在：作品、过程图片、项目说明和文章都可以持续替换和补充。"
+    "9 年以上设计工作经验，擅长 AI 设计、C 端、B 端 UI 与交互设计，熟悉多平台设计规范，能够从前期规划到最终交付独立完成全流程设计。",
+    "具备 App、小程序、H5、数据可视化与 B 端管理后台设计经验，拥有丰富的跨行业项目经验和研发协作能力。",
+    "重视用户研究、竞品分析与团队协作，能高效解决设计问题，并推动设计方案落地。"
   ],
   "capabilities": [
-    "艺术指导 / Art Direction",
-    "品牌识别 / Brand Identity",
-    "数字体验 / Digital Experience",
-    "编辑系统 / Editorial Systems",
-    "动态视觉 / Motion"
+    "UI/UX 设计 / UI/UX Design",
+    "C 端与 B 端产品设计 / Consumer & Enterprise Products",
+    "AI 产品体验设计 / AI Product Experience",
+    "设计规范与组件库 / Design Systems",
+    "数据可视化与后台设计 / Data Visualization & Admin",
+    "Sketch、Figma、Photoshop、Illustrator、Axure RP",
+    "摄影、剪辑、灯光布置 / Photo, Editing & Lighting"
+  ],
+  "education": [
+    {
+      "school": "济源职业技术学院",
+      "program": "广告设计与动画制作",
+      "detail": "全日制大专"
+    },
+    {
+      "school": "北京理工大学",
+      "program": "数字媒体",
+      "detail": "非全日制本科，获得学位证书"
+    }
+  ],
+  "experience": [
+    {
+      "company": "深圳岚创云商科技有限公司（天津科林车业有限公司）",
+      "role": "UI 设计师",
+      "period": "2025.2 - 至今",
+      "url": "https://cyseekinbike.com/",
+      "summary": [
+        "负责 Cyseekin 独立站亚马逊风格 UI 设计方案。",
+        "负责公司和社媒图、海报、PPT 等内容设计。",
+        "负责产品拍摄、设计统筹以及设计部门和运营部门的协同工作。"
+      ]
+    },
+    {
+      "company": "深圳锐云智能有限公司（珠海安联锐视科技股份有限公司）",
+      "role": "UI 设计师",
+      "period": "2024.8 - 2024.11",
+      "url": "https://napcatlife.com/",
+      "summary": [
+        "负责 Napcat 独立站与亚马逊平台 UI 设计方案。",
+        "制作社媒图、海报、PPT 等设计内容。",
+        "制定 UI 组件设计规范与 Axure 原型组件标准。"
+      ]
+    },
+    {
+      "company": "深圳看到科技有限公司",
+      "role": "UX 设计师",
+      "period": "2024.1 - 2024.7",
+      "url": "https://www.kandaovr.com/zh/qoocam-3-ultra",
+      "summary": [
+        "负责公司官网及 QooCam 3 App 视觉设计。",
+        "完成相机 UI 项目设计。",
+        "设计独立站、亚马逊页面和营销海报。"
+      ]
+    },
+    {
+      "company": "华通科技有限公司（中兴通讯股份有限公司）",
+      "role": "UX 设计师",
+      "period": "2017.7 - 2023.12",
+      "summary": [
+        "参与多个移动端与 Web 端项目设计，包括 Dashboard、RAIS 平台、多屏推推、电商 App 等。",
+        "制定移动端与 Web 端设计规范，优化组件库。",
+        "与研发团队深度合作，确保高效交付并持续优化用户体验。"
+      ]
+    },
+    {
+      "company": "广州夜界网络科技有限公司",
+      "role": "UX 设计师",
+      "period": "2015.11 - 2017.6",
+      "summary": [
+        "完成夜界 App UI 设计并提出视觉解决方案。",
+        "负责移动端人机交互界面和创意设计。",
+        "设计公司微信公众号内容页面及 H5 活动页面。"
+      ]
+    }
   ],
   "socials": [
     {
-      "label": "Instagram",
-      "url": "https://instagram.com/"
+      "label": "Cyseekin",
+      "url": "https://cyseekinbike.com/"
     },
     {
-      "label": "LinkedIn",
-      "url": "https://linkedin.com/"
+      "label": "Napcat",
+      "url": "https://napcatlife.com/"
     },
     {
-      "label": "GitHub",
-      "url": "https://github.com/"
+      "label": "Kandao",
+      "url": "https://www.kandaovr.com/zh/qoocam-3-ultra"
     }
   ],
   "seo": {
-    "title": "你的名字 · 创意作品集",
-    "description": "一个长期更新的个人创意作品集，收录精选作品、项目档案、创作手记与合作信息。"
+    "title": "王亚鹏 · UI/UX 设计师作品集",
+    "description": "王亚鹏的个人 UI/UX 设计作品集，聚焦 AI 产品、C 端、B 端、数据可视化与设计系统经验。"
   }
 }
