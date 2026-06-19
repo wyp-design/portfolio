@@ -1,15 +1,21 @@
 {
-  "name": "Your Name",
-  "role": "Creative Portfolio",
-  "location": "Shanghai, China",
+  "name": "你的名字",
+  "role": "创意作品集 / Creative Portfolio",
+  "location": "中国上海 / Shanghai, China",
   "timezone": "UTC+8",
-  "availability": "Available for selected collaborations",
+  "availability": "接受精选合作 / Available for selected collaborations",
   "email": "hello@example.com",
   "bio": [
-    "A creative portfolio shaped around identity systems, digital experiences, image-led stories, and clear editorial structure.",
-    "The site is designed as a living archive: works, notes, process images, and essays can be updated over time without rebuilding the visual system."
+    "这是一个围绕身份系统、数字体验、图像叙事与清晰编辑结构展开的个人创意作品集。",
+    "网站会作为一个长期更新的创作档案存在：作品、过程图片、项目说明和文章都可以持续替换和补充。"
   ],
-  "capabilities": ["Art Direction", "Brand Identity", "Digital Experience", "Editorial Systems", "Motion"],
+  "capabilities": [
+    "艺术指导 / Art Direction",
+    "品牌识别 / Brand Identity",
+    "数字体验 / Digital Experience",
+    "编辑系统 / Editorial Systems",
+    "动态视觉 / Motion"
+  ],
   "socials": [
     {
       "label": "Instagram",
@@ -25,7 +31,7 @@
     }
   ],
   "seo": {
-    "title": "Your Name · Creative Portfolio",
-    "description": "A living creative portfolio for selected works, archive notes, essays, and collaborations."
+    "title": "你的名字 · 创意作品集",
+    "description": "一个长期更新的个人创意作品集，收录精选作品、项目档案、创作手记与合作信息。"
   }
 }

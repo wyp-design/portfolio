@@ -19,32 +19,32 @@ const nextWork = works[(currentIndex + 1) % works.length];
 <BaseLayout title={work.data.title} description={`${work.data.title}, ${work.data.focus.join(', ')}`} active="works">
   <article class="case-page">
     <aside class="case-aside reveal">
-      <a class="back-link" href={withBase('/archive')}>Archive</a>
+      <a class="back-link" href={withBase('/archive')}>返回档案 / Archive</a>
       <div>
         <h1>{work.data.title}</h1>
         <p>{work.data.focus.join(' / ')}</p>
       </div>
       <dl class="meta-list">
         <div>
-          <dt>Year</dt>
+          <dt>年份 / Year</dt>
           <dd>{work.data.year}</dd>
         </div>
         <div>
-          <dt>Role</dt>
+          <dt>职责 / Role</dt>
           <dd>{work.data.role}</dd>
         </div>
         {work.data.client && (
           <div>
-            <dt>Client</dt>
+            <dt>客户 / Client</dt>
             <dd>{work.data.client}</dd>
           </div>
         )}
         <div>
-          <dt>Status</dt>
+          <dt>状态 / Status</dt>
           <dd>{work.data.status}</dd>
         </div>
       </dl>
-      {work.data.externalUrl && <a class="text-link" href={work.data.externalUrl} target="_blank" rel="noreferrer">Visit project</a>}
+      {work.data.externalUrl && <a class="text-link" href={work.data.externalUrl} target="_blank" rel="noreferrer">访问项目 / Visit project</a>}
     </aside>
 
     <div class="case-content reveal">
@@ -65,7 +65,7 @@ const nextWork = works[(currentIndex + 1) % works.length];
   </article>
 
   <section class="next-work">
-    <span>Next Work</span>
+    <span>下一个作品 / Next Work</span>
     <a href={withBase(`/work/${nextWork.id}`)}>{nextWork.data.title}</a>
   </section>
 </BaseLayout>

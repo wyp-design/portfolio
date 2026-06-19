@@ -8,11 +8,11 @@ const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
 );
 ---
 
-<BaseLayout title="Blog" active="blog">
+<BaseLayout title="手记 Blog" active="blog">
   <section class="blog-page page-shell">
     <div class="page-intro reveal">
-      <p>Essays, process notes, and small observations that can live beside the finished work.</p>
-      <h1>Blog</h1>
+      <p>这里放创作札记、过程记录和一些短观察，让完成的作品旁边也保留思考的痕迹。</p>
+      <h1>手记</h1>
     </div>
 
     <div class="blog-list reveal">

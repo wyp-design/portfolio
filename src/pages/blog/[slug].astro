@@ -14,7 +14,7 @@ const { Content } = await render(post);
 
 <BaseLayout title={post.data.title} description={post.data.summary} active="blog">
   <article class="article-page page-shell reveal">
-    <a class="back-link" href={withBase('/blog')}>Blog</a>
+    <a class="back-link" href={withBase('/blog')}>返回手记 / Blog</a>
     <header class="article-header">
       <div>
         <span>{formatDate(post.data.date)} · {post.data.language}</span>

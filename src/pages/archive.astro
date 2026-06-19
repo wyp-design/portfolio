@@ -8,11 +8,11 @@ const works = (await getCollection('works')).sort((a, b) => b.data.year - a.data
 const first = works[0];
 ---
 
-<BaseLayout title="Archive" active="archive">
+<BaseLayout title="档案 Archive" active="archive">
   <section class="archive-page page-shell">
     <div class="page-intro reveal">
-      <p>A curated collection of collaborations, experiments, and living records. List mode is built for scanning; overview mode is built for image-led browsing.</p>
-      <h1>Archive</h1>
+      <p>这里收纳合作项目、实验练习与持续更新的创作记录。列表视图方便快速浏览，概览视图更适合用图片进入作品。</p>
+      <h1>档案</h1>
     </div>
 
     <div class="archive-page__body reveal">
@@ -32,9 +32,9 @@ const first = works[0];
       </div>
     </div>
 
-    <nav class="view-switcher" aria-label="Archive view">
-      <button class="is-active" type="button" data-view-button="list">List</button>
-      <button type="button" data-view-button="overview">Overview</button>
+    <nav class="view-switcher" aria-label="档案视图切换">
+      <button class="is-active" type="button" data-view-button="list">列表 List</button>
+      <button type="button" data-view-button="overview">概览 Overview</button>
     </nav>
   </section>
 </BaseLayout>

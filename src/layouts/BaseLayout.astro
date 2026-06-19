@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import '../styles/locale.css';
 import site from '../data/site.json';
 import { withBase } from '../lib/url';
 
@@ -16,15 +17,15 @@ const {
 } = Astro.props;
 const pageTitle = title === site.seo.title ? title : `${title} · ${site.name}`;
 const nav = [
-  { label: 'Works', href: '/', key: 'works' },
-  { label: 'Archive', href: '/archive', key: 'archive' },
-  { label: 'Blog', href: '/blog', key: 'blog' },
-  { label: 'About', href: '/about', key: 'about' }
+  { label: '作品', labelEn: 'Works', href: '/', key: 'works' },
+  { label: '档案', labelEn: 'Archive', href: '/archive', key: 'archive' },
+  { label: '手记', labelEn: 'Blog', href: '/blog', key: 'blog' },
+  { label: '关于', labelEn: 'About', href: '/about', key: 'about' }
 ];
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,23 +43,25 @@ const nav = [
       {Array.from({ length: 12 }).map(() => <span />)}
     </div>
     <header class="site-header">
-      <button class="grid-toggle" type="button" data-grid-toggle aria-label="Toggle grid">
-        Dimensions
+      <button class="grid-toggle" type="button" data-grid-toggle aria-label="切换网格参考线">
+        网格 / Grid
       </button>
-      <nav class="site-nav" aria-label="Primary navigation">
-        {nav.map((item, index) => (
+      <nav class="site-nav" aria-label="主导航">
+        {nav.map((item) => (
           <a
             class:list={['site-nav__link', active === item.key && 'is-active']}
             href={withBase(item.href)}
+            aria-current={active === item.key ? 'page' : undefined}
           >
-            {item.label}{index < nav.length - 1 ? ',' : ''}
+            <span class="nav-cn">{item.label}</span>
+            <span class="nav-en">{item.labelEn}</span>
           </a>
         ))}
       </nav>
       <button class="availability" type="button" data-copy-email={site.email}>
         <span class="availability__mark" aria-hidden="true"></span>
         <span class="availability__status">{site.availability}</span>
-        <span class="availability__copy" data-copy-label>Copy email?</span>
+        <span class="availability__copy" data-copy-label>复制邮箱 / Copy email</span>
       </button>
     </header>
 
@@ -96,10 +99,10 @@ const nav = [
             try {
               await navigator.clipboard.writeText(email);
               button.classList.add('is-copied');
-              if (label) label.textContent = 'Email copied!';
+              if (label) label.textContent = '已复制邮箱 / Email copied';
               window.setTimeout(() => {
                 button.classList.remove('is-copied');
-                if (label) label.textContent = 'Copy email?';
+                if (label) label.textContent = '复制邮箱 / Copy email';
               }, 1600);
             } catch {
               window.location.href = `mailto:${email}`;
