@@ -8,12 +8,12 @@ focus:
 role: 视觉设计, 电商设计
 client: 个人项目
 status: 占位待替换
-cover: /uploads/category-cross-border-cover.svg
-preview: /uploads/category-cross-border-cover.svg
+cover: /uploads/category-cross-border-cover.jpg
+preview: /uploads/category-cross-border-cover.jpg
 gallery:
-  - image: /uploads/category-cross-border-cover.svg
+  - image: /uploads/category-cross-border-cover.jpg
     caption: 产品卖点视觉占位。
-  - image: /uploads/category-cross-border-cover.svg
+  - image: /uploads/category-cross-border-cover.jpg
     caption: 营销延展或详情页模块占位。
 featured: false
 order: 22

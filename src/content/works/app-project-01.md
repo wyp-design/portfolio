@@ -8,12 +8,12 @@ focus:
 role: UI/UX 设计, App 设计
 client: 个人项目
 status: 占位待替换
-cover: /uploads/category-app-cover.svg
-preview: /uploads/category-app-cover.svg
+cover: /uploads/category-app-cover.jpg
+preview: /uploads/category-app-cover.jpg
 gallery:
-  - image: /uploads/category-app-cover.svg
+  - image: /uploads/category-app-cover.jpg
     caption: App 项目封面占位。
-  - image: /uploads/category-app-cover.svg
+  - image: /uploads/category-app-cover.jpg
     caption: 核心流程或页面状态占位。
 featured: false
 order: 41

@@ -8,12 +8,12 @@ focus:
 role: UI/UX 设计, 交互设计
 client: 个人项目
 status: 占位待替换
-cover: /uploads/category-app-cover.svg
-preview: /uploads/category-app-cover.svg
+cover: /uploads/category-app-cover.jpg
+preview: /uploads/category-app-cover.jpg
 gallery:
-  - image: /uploads/category-app-cover.svg
+  - image: /uploads/category-app-cover.jpg
     caption: 移动端页面节奏占位。
-  - image: /uploads/category-app-cover.svg
+  - image: /uploads/category-app-cover.jpg
     caption: 交互流程或关键状态占位。
 featured: false
 order: 42

@@ -8,12 +8,12 @@ focus:
 role: UI/UX 设计, 设计系统
 client: 个人项目
 status: 占位待替换
-cover: /uploads/category-web-cover.svg
-preview: /uploads/category-web-cover.svg
+cover: /uploads/category-web-cover.jpg
+preview: /uploads/category-web-cover.jpg
 gallery:
-  - image: /uploads/category-web-cover.svg
+  - image: /uploads/category-web-cover.jpg
     caption: Web 项目结构或组件过程占位。
-  - image: /uploads/category-web-cover.svg
+  - image: /uploads/category-web-cover.jpg
     caption: 最终页面效果占位。
 featured: false
 order: 32
