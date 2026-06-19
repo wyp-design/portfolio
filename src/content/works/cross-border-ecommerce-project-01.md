@@ -8,12 +8,12 @@ focus:
 role: UI/UX 设计, 视觉设计
 client: 个人项目
 status: 占位待替换
-cover: /uploads/category-cross-border-cover.jpg
-preview: /uploads/category-cross-border-cover.jpg
+cover: /uploads/category-cross-border-cover.png
+preview: /uploads/category-cross-border-cover.png
 gallery:
-  - image: /uploads/category-cross-border-cover.jpg
+  - image: /uploads/category-cross-border-cover.png
     caption: 跨境电商项目封面占位。
-  - image: /uploads/category-cross-border-cover.jpg
+  - image: /uploads/category-cross-border-cover.png
     caption: 页面结构或产品展示占位。
 featured: false
 order: 21

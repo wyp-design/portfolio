@@ -8,12 +8,12 @@ focus:
 role: 视觉设计, 平面设计
 client: 个人项目
 status: 占位待替换
-cover: /uploads/category-visual-design-cover.jpg
-preview: /uploads/category-visual-design-cover.jpg
+cover: /uploads/category-visual-design-cover.png
+preview: /uploads/category-visual-design-cover.png
 gallery:
-  - image: /uploads/category-visual-design-cover.jpg
+  - image: /uploads/category-visual-design-cover.png
     caption: 平面视觉项目主图占位。
-  - image: /uploads/category-visual-design-cover.jpg
+  - image: /uploads/category-visual-design-cover.png
     caption: 视觉延展或物料组合占位。
 featured: false
 order: 51
