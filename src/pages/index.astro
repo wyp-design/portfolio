@@ -1,14 +1,11 @@
 ---
-import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import WorkTable from '../components/WorkTable.astro';
 import site from '../data/site.json';
+import portfolioData from '../data/portfolioCategories.json';
 import { withBase } from '../lib/url';
 
-const works = (await getCollection('works'))
-  .sort((a, b) => a.data.order - b.data.order);
-const featured = works.filter((work) => work.data.featured);
-const first = featured[0] ?? works[0];
+const categories = portfolioData.categories;
+const first = categories[0];
 ---
 
 <BaseLayout active="works">
@@ -24,19 +21,30 @@ const first = featured[0] ?? works[0];
     </div>
 
     <div class="home-stage__mark reveal" aria-hidden="true">
-      <span>YP</span>
+      <span>WYP</span>
     </div>
 
     <div class="home-stage__preview reveal" data-home-preview>
       <img
-        src={withBase(first.data.preview || first.data.cover)}
-        alt={`${first.data.title} preview`}
+        src={withBase(first.cover)}
+        alt={`${first.title} cover`}
         data-preview-image
       />
     </div>
 
-    <div class="home-stage__works reveal">
-      <WorkTable works={featured} compact />
+    <div class="home-stage__works reveal category-index" data-work-table>
+      {categories.map((category, index) => (
+        <a
+          class="category-index__row"
+          href={withBase(`/category/${category.slug}`)}
+          data-preview={withBase(category.cover)}
+        >
+          <span class="category-index__id">CAT_{String(index + 1).padStart(2, '0')}</span>
+          <span class="category-index__title">{category.title}</span>
+          <span class="category-index__en">{category.titleEn}</span>
+          <span class="category-index__summary">{category.summary}</span>
+        </a>
+      ))}
     </div>
 
     <div class="home-stage__footer">

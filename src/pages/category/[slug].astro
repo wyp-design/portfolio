@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import portfolioData from '../../data/portfolioCategories.json';
+import { withBase } from '../../lib/url';
+
+export function getStaticPaths() {
+  return portfolioData.categories.map((category) => ({
+    params: { slug: category.slug },
+    props: { category }
+  }));
+}
+
+const { category } = Astro.props;
+---
+
+<BaseLayout title={`${category.title} ${category.titleEn}`} description={category.summary} active="works">
+  <section class="category-page page-shell">
+    <div class="page-intro reveal">
+      <p>{category.summary}</p>
+      <h1>{category.title}</h1>
+    </div>
+
+    <div class="category-hero reveal">
+      <img src={withBase(category.cover)} alt={`${category.title} cover`} />
+      <div>
+        <a class="back-link" href={withBase('/')}>返回分类 / Categories</a>
+        <p>{category.titleEn}</p>
+      </div>
+    </div>
+
+    <div class="project-stack reveal">
+      {category.projects.map((project, index) => (
+        <article class="project-panel">
+          <div class="project-panel__meta">
+            <span>{String(index + 1).padStart(2, '0')}</span>
+            <h2>{project.title}</h2>
+            <p class="project-panel__en">{project.titleEn}</p>
+            <p>{project.description}</p>
+          </div>
+          <div class="project-panel__media">
+            {'pdf' in project && typeof project.pdf === 'string' && project.pdf ? (
+              <iframe src={withBase(project.pdf)} title={`${project.title} PDF`} loading="lazy"></iframe>
+            ) : (
+              <img src={withBase(project.image)} alt={project.title} loading="lazy" />
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

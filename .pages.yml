@@ -2,7 +2,7 @@ media:
   input: public/uploads
   output: /uploads
   rename: safe
-  categories: [image]
+  categories: [image, document]
 
 content:
   - name: site
@@ -94,6 +94,55 @@ content:
             type: string
           - name: description
             type: text
+
+  - name: portfolioCategories
+    label: Portfolio categories
+    type: file
+    path: src/data/portfolioCategories.json
+    format: json
+    fields:
+      - name: categories
+        label: Categories
+        type: object
+        list: true
+        fields:
+          - name: slug
+            label: Slug
+            type: string
+            required: true
+          - name: title
+            label: Chinese title
+            type: string
+            required: true
+          - name: titleEn
+            label: English title
+            type: string
+          - name: summary
+            label: Summary
+            type: text
+          - name: cover
+            label: Cover image
+            type: image
+          - name: projects
+            label: Projects
+            type: object
+            list: true
+            fields:
+              - name: title
+                label: Chinese title
+                type: string
+              - name: titleEn
+                label: English title
+                type: string
+              - name: description
+                label: Description
+                type: text
+              - name: image
+                label: Image
+                type: image
+              - name: pdf
+                label: PDF
+                type: file
 
   - name: works
     label: Works
