@@ -8,11 +8,11 @@ const works = (await getCollection('works')).sort((a, b) => b.data.year - a.data
 const first = works[0];
 ---
 
-<BaseLayout title="档案 Archive" active="archive">
+<BaseLayout title="作品集 Portfolio" active="archive">
   <section class="archive-page page-shell">
     <div class="page-intro reveal">
-      <p>这里收纳合作项目、实验练习与持续更新的创作记录。列表视图方便快速浏览，概览视图更适合用图片进入作品。</p>
-      <h1>档案</h1>
+      <p>这里收纳你的项目详情、视觉材料与持续更新的案例记录。列表视图方便快速浏览，概览视图更适合用图片进入项目。</p>
+      <h1>作品集</h1>
     </div>
 
     <div class="archive-page__body reveal">
@@ -32,7 +32,7 @@ const first = works[0];
       </div>
     </div>
 
-    <nav class="view-switcher" aria-label="档案视图切换">
+    <nav class="view-switcher" aria-label="作品集视图切换">
       <button class="is-active" type="button" data-view-button="list">列表 List</button>
       <button type="button" data-view-button="overview">概览 Overview</button>
     </nav>

@@ -30,12 +30,13 @@ const { category } = Astro.props;
 
     <div class="project-stack reveal">
       {category.projects.map((project, index) => (
-        <article class="project-panel">
+        <a class="project-panel project-panel--link" href={withBase(`/work/${project.workSlug}`)}>
           <div class="project-panel__meta">
             <span>{String(index + 1).padStart(2, '0')}</span>
             <h2>{project.title}</h2>
             <p class="project-panel__en">{project.titleEn}</p>
             <p>{project.description}</p>
+            <span class="project-panel__cta">查看项目详情 / View case</span>
           </div>
           <div class="project-panel__media">
             {'pdf' in project && typeof project.pdf === 'string' && project.pdf ? (
@@ -44,7 +45,7 @@ const { category } = Astro.props;
               <img src={withBase(project.image)} alt={project.title} loading="lazy" />
             )}
           </div>
-        </article>
+        </a>
       ))}
     </div>
   </section>

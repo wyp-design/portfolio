@@ -17,8 +17,8 @@ const {
 } = Astro.props;
 const pageTitle = title === site.seo.title ? title : `${title} · ${site.name}`;
 const nav = [
-  { label: '作品', labelEn: 'Works', href: '/', key: 'works' },
-  { label: '档案', labelEn: 'Archive', href: '/archive', key: 'archive' },
+  { label: '首页', labelEn: 'Home', href: '/', key: 'works' },
+  { label: '作品集', labelEn: 'Portfolio', href: '/archive', key: 'archive' },
   { label: '手记', labelEn: 'Blog', href: '/blog', key: 'blog' },
   { label: '关于', labelEn: 'About', href: '/about', key: 'about' }
 ];

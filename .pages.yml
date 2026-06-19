@@ -134,6 +134,9 @@ content:
               - name: titleEn
                 label: English title
                 type: string
+              - name: workSlug
+                label: Linked work slug
+                type: string
               - name: description
                 label: Description
                 type: text
@@ -145,7 +148,7 @@ content:
                 type: file
 
   - name: works
-    label: Works
+    label: Portfolio
     type: collection
     path: src/content/works
     format: yaml-frontmatter

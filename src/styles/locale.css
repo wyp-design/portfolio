@@ -164,6 +164,22 @@
   align-items: start;
   padding-top: 2rem;
   border-top: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+}
+
+.project-panel--link {
+  transition: border-color 180ms ease, opacity 180ms ease, transform 180ms ease;
+}
+
+.project-panel--link:hover {
+  border-color: var(--accent);
+  transform: translateY(-0.15rem);
+}
+
+.project-panel--link:hover .project-panel__media img,
+.project-panel--link:hover .project-panel__media iframe {
+  border-color: rgba(255, 68, 1, 0.55);
 }
 
 .project-panel__meta {
@@ -174,12 +190,18 @@
 }
 
 .project-panel__meta span,
-.project-panel__en {
+.project-panel__en,
+.project-panel__cta {
   color: var(--quiet);
   font-size: 0.72rem;
   font-weight: 850;
   line-height: 1;
   text-transform: uppercase;
+}
+
+.project-panel__cta {
+  color: var(--accent);
+  opacity: 0.86;
 }
 
 .project-panel__meta h2 {

@@ -14,7 +14,7 @@ gallery:
   - image: /uploads/field-notes-cover.png
     caption: Modular editorial grid for image-led stories.
   - image: /uploads/field-notes-preview.png
-    caption: Archive index and reading flow.
+    caption: Portfolio index and reading flow.
 featured: true
 order: 2
 ---

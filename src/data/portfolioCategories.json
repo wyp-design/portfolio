@@ -10,12 +10,14 @@
         {
           "title": "项目一",
           "titleEn": "Project 01",
+          "workSlug": "aigc-project-01",
           "description": "AIGC 方向占位项目。后续可替换为 AI 海报、AI 电商图、智能产品体验或生成式设计流程案例。",
           "image": "/uploads/after-image-preview.png"
         },
         {
           "title": "项目二",
           "titleEn": "Project 02",
+          "workSlug": "aigc-project-02",
           "description": "用于展示 AI 辅助视觉探索、提示词流程、方案迭代和最终交付效果的项目占位。",
           "image": "/uploads/blog-process.png"
         }
@@ -31,12 +33,14 @@
         {
           "title": "项目一",
           "titleEn": "Project 01",
+          "workSlug": "cross-border-ecommerce-project-01",
           "description": "跨境电商方向占位项目。可用于整理独立站首页、产品详情页、亚马逊 A+ 页面或品牌营销素材。",
           "image": "/uploads/field-notes-preview.png"
         },
         {
           "title": "项目二",
           "titleEn": "Project 02",
+          "workSlug": "cross-border-ecommerce-project-02",
           "description": "用于展示产品卖点提炼、版式系统、转化路径和多平台视觉统一的项目占位。",
           "image": "/uploads/blog-clarity.png"
         }
@@ -52,12 +56,14 @@
         {
           "title": "项目一",
           "titleEn": "Project 01",
+          "workSlug": "web-project-01",
           "description": "Web 方向占位项目。适合放官网改版、品牌落地页、企业后台或数据看板设计。",
           "image": "/uploads/north-angle-preview.png"
         },
         {
           "title": "项目二",
           "titleEn": "Project 02",
+          "workSlug": "web-project-02",
           "description": "用于展示页面信息架构、组件规范、响应式策略和前后端协作交付的项目占位。",
           "image": "/uploads/north-angle-process.png"
         }
@@ -73,12 +79,14 @@
         {
           "title": "项目一",
           "titleEn": "Project 01",
+          "workSlug": "app-project-01",
           "description": "App 方向占位项目。可用于整理移动端产品流程、核心页面、交互原型和视觉规范。",
           "image": "/uploads/quiet-objects-preview.png"
         },
         {
           "title": "项目二",
           "titleEn": "Project 02",
+          "workSlug": "app-project-02",
           "description": "用于展示功能架构、关键任务路径、组件状态和多端适配方案的项目占位。",
           "image": "/uploads/blog-rhythm.png"
         }
@@ -94,12 +102,14 @@
         {
           "title": "项目一",
           "titleEn": "Project 01",
+          "workSlug": "visual-design-project-01",
           "description": "平面视觉综合方向占位项目。可用于展示海报、KV、社媒图、PPT 或产品拍摄成果。",
           "image": "/uploads/blog-rhythm.png"
         },
         {
           "title": "项目二",
           "titleEn": "Project 02",
+          "workSlug": "visual-design-project-02",
           "description": "用于展示视觉概念、版式延展、物料组合和最终发布效果的项目占位。",
           "image": "/uploads/after-image-cover.png"
         }

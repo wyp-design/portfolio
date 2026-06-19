@@ -16,10 +16,10 @@ const currentIndex = works.findIndex((item) => item.id === work.id);
 const nextWork = works[(currentIndex + 1) % works.length];
 ---
 
-<BaseLayout title={work.data.title} description={`${work.data.title}, ${work.data.focus.join(', ')}`} active="works">
+<BaseLayout title={work.data.title} description={`${work.data.title}, ${work.data.focus.join(', ')}`} active="archive">
   <article class="case-page">
     <aside class="case-aside reveal">
-      <a class="back-link" href={withBase('/archive')}>返回档案 / Archive</a>
+      <a class="back-link" href={withBase('/archive')}>返回作品集 / Portfolio</a>
       <div>
         <h1>{work.data.title}</h1>
         <p>{work.data.focus.join(' / ')}</p>
@@ -65,7 +65,7 @@ const nextWork = works[(currentIndex + 1) % works.length];
   </article>
 
   <section class="next-work">
-    <span>下一个作品 / Next Work</span>
+    <span>下一个项目 / Next Project</span>
     <a href={withBase(`/work/${nextWork.id}`)}>{nextWork.data.title}</a>
   </section>
 </BaseLayout>
