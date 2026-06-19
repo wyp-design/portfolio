@@ -8,12 +8,12 @@ focus:
 role: UI/UX 设计, Web 设计
 client: 个人项目
 status: 占位待替换
-cover: /uploads/north-angle-cover.png
-preview: /uploads/north-angle-preview.png
+cover: /uploads/category-web-cover.svg
+preview: /uploads/category-web-cover.svg
 gallery:
-  - image: /uploads/north-angle-cover.png
+  - image: /uploads/category-web-cover.svg
     caption: Web 项目首页视觉占位。
-  - image: /uploads/north-angle-preview.png
+  - image: /uploads/category-web-cover.svg
     caption: 页面细节或响应式展示占位。
 featured: false
 order: 31

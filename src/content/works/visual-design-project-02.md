@@ -8,12 +8,12 @@ focus:
 role: 视觉设计, 视频与物料设计
 client: 个人项目
 status: 占位待替换
-cover: /uploads/after-image-cover.png
-preview: /uploads/after-image-cover.png
+cover: /uploads/category-visual-design-cover.svg
+preview: /uploads/category-visual-design-cover.svg
 gallery:
-  - image: /uploads/after-image-cover.png
+  - image: /uploads/category-visual-design-cover.svg
     caption: 综合视觉项目封面占位。
-  - image: /uploads/blog-rhythm.png
+  - image: /uploads/category-visual-design-cover.svg
     caption: 物料组合或发布场景占位。
 featured: false
 order: 52

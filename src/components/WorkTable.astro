@@ -15,7 +15,6 @@ const { works, compact = false } = Astro.props;
     <span>ID</span>
     <span>项目标题 Title</span>
     <span>项目分类 Focus</span>
-    <span>年份 Year</span>
   </div>
   <div class="work-table__rows">
     {works.map((work, index) => (
@@ -27,7 +26,6 @@ const { works, compact = false } = Astro.props;
         <span class="work-row__id">ISB_{String(index + 104).padStart(3, '0')}</span>
         <span class="work-row__title">{work.data.title}</span>
         <span class="work-row__focus">{work.data.focus.join(' · ')}</span>
-        <span class="work-row__year">{work.data.year}</span>
       </a>
     ))}
   </div>

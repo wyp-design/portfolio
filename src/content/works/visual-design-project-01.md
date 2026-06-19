@@ -8,12 +8,12 @@ focus:
 role: 视觉设计, 平面设计
 client: 个人项目
 status: 占位待替换
-cover: /uploads/blog-rhythm.png
-preview: /uploads/blog-rhythm.png
+cover: /uploads/category-visual-design-cover.svg
+preview: /uploads/category-visual-design-cover.svg
 gallery:
-  - image: /uploads/blog-rhythm.png
+  - image: /uploads/category-visual-design-cover.svg
     caption: 平面视觉项目主图占位。
-  - image: /uploads/after-image-cover.png
+  - image: /uploads/category-visual-design-cover.svg
     caption: 视觉延展或物料组合占位。
 featured: false
 order: 51

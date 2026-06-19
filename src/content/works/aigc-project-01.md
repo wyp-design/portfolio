@@ -8,12 +8,12 @@ focus:
 role: UI/UX 设计, 视觉设计, AI 流程探索
 client: 个人项目
 status: 占位待替换
-cover: /uploads/after-image-cover.png
-preview: /uploads/after-image-preview.png
+cover: /uploads/category-aigc-cover.svg
+preview: /uploads/category-aigc-cover.svg
 gallery:
-  - image: /uploads/after-image-cover.png
+  - image: /uploads/category-aigc-cover.svg
     caption: 项目封面占位，后续替换为真实 AIGC 项目主视觉。
-  - image: /uploads/after-image-preview.png
+  - image: /uploads/category-aigc-cover.svg
     caption: 项目过程或核心页面占位。
 featured: false
 order: 11

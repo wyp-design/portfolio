@@ -8,12 +8,12 @@ focus:
 role: UI/UX 设计, AI 辅助设计
 client: 个人项目
 status: 占位待替换
-cover: /uploads/blog-process.png
-preview: /uploads/blog-process.png
+cover: /uploads/category-aigc-cover.svg
+preview: /uploads/category-aigc-cover.svg
 gallery:
-  - image: /uploads/blog-process.png
+  - image: /uploads/category-aigc-cover.svg
     caption: AIGC 流程记录占位。
-  - image: /uploads/after-image-cover.png
+  - image: /uploads/category-aigc-cover.svg
     caption: 视觉输出或方案对比占位。
 featured: false
 order: 12

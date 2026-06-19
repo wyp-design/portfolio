@@ -26,10 +26,6 @@ const nextWork = works[(currentIndex + 1) % works.length];
       </div>
       <dl class="meta-list">
         <div>
-          <dt>年份 / Year</dt>
-          <dd>{work.data.year}</dd>
-        </div>
-        <div>
           <dt>职责 / Role</dt>
           <dd>{work.data.role}</dd>
         </div>
@@ -39,10 +35,6 @@ const nextWork = works[(currentIndex + 1) % works.length];
             <dd>{work.data.client}</dd>
           </div>
         )}
-        <div>
-          <dt>状态 / Status</dt>
-          <dd>{work.data.status}</dd>
-        </div>
       </dl>
       {work.data.externalUrl && <a class="text-link" href={work.data.externalUrl} target="_blank" rel="noreferrer">访问项目 / Visit project</a>}
     </aside>

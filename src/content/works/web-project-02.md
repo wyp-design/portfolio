@@ -8,12 +8,12 @@ focus:
 role: UI/UX 设计, 设计系统
 client: 个人项目
 status: 占位待替换
-cover: /uploads/north-angle-process.png
-preview: /uploads/north-angle-process.png
+cover: /uploads/category-web-cover.svg
+preview: /uploads/category-web-cover.svg
 gallery:
-  - image: /uploads/north-angle-process.png
+  - image: /uploads/category-web-cover.svg
     caption: Web 项目结构或组件过程占位。
-  - image: /uploads/north-angle-preview.png
+  - image: /uploads/category-web-cover.svg
     caption: 最终页面效果占位。
 featured: false
 order: 32
